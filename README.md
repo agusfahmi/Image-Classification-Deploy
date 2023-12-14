@@ -74,7 +74,7 @@ Hasil prediksi sampel 10 citra :
 Jalankan aplikasi Flask untuk mendeploy model:
 
 ```bash
-python app.py
+flask run
 ```
 
 Akses antarmuka web di [http://127.0.0.1:5000/](http://127.0.0.1:5000/) untuk berinteraksi dengan klasifikasi Batu-Gunting-Kertas.
