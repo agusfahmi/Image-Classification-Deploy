@@ -62,6 +62,7 @@ Arsitektur MobileNet :
 ![mobtiny_fig](https://github.com/agusfahmi/Image-Classification-Deploy/assets/85145157/7b4841d6-6f6d-445f-8c40-0911f7aaccf0)
 
 Evaluasi Model :
+
 ![ac](https://github.com/agusfahmi/Image-Classification-Deploy/assets/85145157/af491738-9b2f-4285-9e3d-944e73ba7f6f)
 
 Hasil prediksi sampel 10 citra :
