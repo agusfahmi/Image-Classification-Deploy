@@ -26,8 +26,7 @@ pip install -r requirements.txt
 1. Klona repositori:
 
 ```bash
-git clone https://github.com/yourusername/rock-paper-scissors-classifier.git
-cd rock-paper-scissors-classifier
+git clone https://github.com/agusfahmi/Image-Classification-Deploy.git
 ```
 
 2. Instal dependensi:
