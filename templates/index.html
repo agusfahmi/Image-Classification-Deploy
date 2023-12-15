@@ -33,10 +33,12 @@
 	{% if prediction %}
   <img src="{{img_path}}" height="400px" width="400px">
 	<h3> Prediksi:  {{prediction}} </h2>{% endif %}
+  {% if accuracy %}
+  <h3>Akurasi : {{'%0.2f'|format(accuracy)}} %</h3>
+	{% endif %}
   {% if prediction_time %}
   <h3>Waktu Prediksi : {{ '%0.1f'|format(prediction_time) }} detik</h3>
 	{% endif %}
-
 
 </div>
 </body>

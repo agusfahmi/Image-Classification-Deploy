@@ -21,8 +21,9 @@ def predict_label(img_path):
 
     label = np.argmax(res)
     prediction_time = round(end_time - start_time, 4)
+    accuracy = res[0][label]
 
-    return names[label], prediction_time
+    return names[label] ,accuracy, prediction_time
 
 # routes
 @app.route("/", methods=['GET', 'POST'])
@@ -39,9 +40,9 @@ def get_hours():
         img = request.files['my_image']
         img_path = "static/" + img.filename
         img.save(img_path)
-        p, prediction_time = predict_label(img_path)
+        p, accuracy, prediction_time = predict_label(img_path)
 
-    return render_template("index.html", prediction=p, img_path=img_path, prediction_time=prediction_time)
+    return render_template("index.html", prediction=p, accuracy=accuracy, img_path=img_path, prediction_time=prediction_time)
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
